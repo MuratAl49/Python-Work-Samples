@@ -1,0 +1,20 @@
+def fillBag(**balls):
+    global bag
+    bag = balls
+    
+def totalBalls():
+    total = 0
+    for color in bag:
+        total += bag[color]
+    return total
+    # alternatively,
+    # return sum(bag.values())
+    
+def probOf(color):
+    return bag[color]/totalBalls()
+
+def probAll():
+    probDict = {}
+    for color in bag:
+        probDict[color] = probOf(color)
+    return probDict
