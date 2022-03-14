@@ -1,3 +1,6 @@
+#The formula for a k day moving average over a series -  𝑛0,𝑛1,𝑛2,𝑛3....𝑛𝑚 is:
+#𝑀𝑖=𝑀𝑖−1+𝑛𝑖−𝑛𝑖−𝑘𝑘,for i = k to m where 𝑀𝑖 is the moving average
+
 import matplotlib.pyplot as plt
 
 statData ="ex4.csv"
